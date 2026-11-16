@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Matheus Beyersdorff - AI Builder Portfolio</title>
+<meta name="description" content="I build AI automations and small products that run in production for real clients: from a business problem to a working tool, tested, and never storing wrong data.">
+<style>
+:root{--bg:#ffffff;--fg:#1a1a1a;--mut:#595959;--ac:#305bab;--soft:#f0f5fd;--line:#d9e3f5;--chip:#dedaff}
+@media (prefers-color-scheme:dark){:root{--bg:#10141c;--fg:#eef1f7;--mut:#a9b2c3;--ac:#8fb3f5;--soft:#171e2b;--line:#2a3447;--chip:#2c2850}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+a{color:var(--ac)}
+.skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:var(--bg);padding:6px 10px;z-index:9}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+header.hero{padding:56px 0 28px;border-bottom:1px solid var(--line)}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:14px;color:var(--mut)}
+h1{font-size:clamp(34px,6vw,56px);line-height:1.05;margin:18px 0 6px;letter-spacing:-.02em}
+.role{font-size:20px;color:var(--ac);font-weight:700;margin:0 0 14px}
+.tagline{font-size:18px;max-width:760px;margin:0 0 18px}
+.conf{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--mut)}
+section{padding:40px 0;border-bottom:1px solid var(--line)}
+h2{font-size:26px;margin:0 0 18px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;list-style:none;padding:0;margin:0}
+.stats li{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:16px}
+.stats b{display:block;font-size:34px;color:var(--ac);line-height:1.1}
+.card{background:var(--soft);border:1px solid var(--line);border-radius:14px;padding:22px;margin:0 0 22px}
+.tag{margin:0;font-size:12.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--ac);font-weight:700}
+h3{font-size:22px;margin:6px 0 10px}
+h4{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--mut);margin:16px 0 4px}
+.card p{margin:4px 0}.card ul{margin:4px 0 4px 20px;padding:0}.card li{margin:3px 0}
+ol.flow{list-style:none;display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:6px 0 4px;counter-reset:s}
+ol.flow li{counter-increment:s;background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:5px 13px;font-size:14px}
+ol.flow li:not(:last-child)::after{content:" \2192";color:var(--ac);font-weight:700}
+.stack{margin-top:14px!important;font-size:14px;color:var(--mut)}
+pre{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:12px 14px;overflow:auto;font-size:13.5px;line-height:1.5;white-space:pre-wrap}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--mut);font-size:13px;text-transform:uppercase;letter-spacing:.05em}
+td.num{text-align:center;font-weight:700;color:var(--ac)}
+.prin{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:12px;list-style:none;padding:0;margin:0}
+.prin li{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.certs{display:flex;flex-wrap:wrap;gap:8px;padding:0;list-style:none;margin:12px 0 0}
+.certs a{display:inline-block;background:var(--chip);border-radius:999px;padding:3px 11px;font-size:13px;text-decoration:none}
+footer{padding:34px 0 60px}
+@media print{.top a,.certs{display:none}.card{break-inside:avoid}}
+</style></head><body>
+<a class="skip" href="#casos">Skip to content</a>
+<header class="hero"><div class="wrap">
+ <div class="top"><span>Curitiba, PR - Brasil</span><a href="portfolio-pt.html" hreflang="pt-BR">Português</a></div>
+ <h1>Matheus Beyersdorff</h1>
+ <p class="role">AI Builder | Software Engineering student</p>
+ <p class="tagline">I build AI automations and small products that run in production for real clients: from a business problem to a working tool, tested, and never storing wrong data.</p>
+ <p class="conf">Confidentiality: client names, people, data, amounts and screenshots are omitted on purpose. Each client appears by sector. More technical detail is available in an interview.</p>
+</div></header>
+<main class="wrap">
+<section><h2>By the numbers</h2><ul class="stats"><li><b>40+</b>n8n workflows in production across about 10 clients</li><li><b>3</b>LLM pipelines: contract PDFs, receipts and handwritten sheets</li><li><b>900+</b>automated tests written across the projects</li><li><b>16</b>monday.com certificates (Sep-Nov 2026)</li></ul></section>
+<section id="casos"><h2>Featured case studies</h2>
+
+<article class="card" id="llm-docs">
+  <p class="tag">AI + automation | corporate education</p>
+  <h3>Contracts and receipts read by LLMs, no typing</h3>
+  <h4>Problem</h4><p>Contracts arrived as signed PDFs and receipts as photos or spreadsheets. The team typed everything by hand into monday.com, with errors and rework.</p>
+  <h4>What I built</h4><ul><li>Pipeline that downloads the contract PDF, extracts the text and asks GPT-4o for the fields in a fixed format.</li><li>Validation before writing: client tax ID and installment total. Only empty fields are filled; divergences become a comment on the item; amendments only comment.</li><li>Receipt reading with a vision model and classification from a closed list of valid labels.</li></ul>
+  <h4>How it works</h4>
+  <ol class="flow" aria-label="How it works"><li>PDF attached</li><li>Extract text</li><li>LLM (fixed JSON)</li><li>Validate tax ID and installments</li><li>Fill empty fields only</li><li>Comment divergences</li></ol>
+  <h4>Results</h4><ul><li>Tested end to end with real contracts and 66 automated checks.</li><li>16 n8n workflows in production for the same client (contracts, receipts, budget, notifications, scheduling).</li></ul>
+  <h4>Engineering safeguards</h4><ul><li>Idempotency key per entry: reprocessing a file never duplicates anything.</li><li>Error check after every write, because monday answers success even when a write fails.</li><li>Labels restricted to the exact list in the column, since a non-existent label is rejected silently.</li><li>Calls to monday go through an internal proxy: the token appears in no workflow file.</li></ul>
+  <p class="stack"><b>Stack:</b> n8n, GPT-4o, monday.com GraphQL, Node.js</p>
+</article>
+
+<article class="card" id="budget">
+  <p class="tag">Data + automation | corporate education</p>
+  <h3>Budget engine linking contracts, activities and expenses</h3>
+  <h4>Problem</h4><p>The budget lived in spreadsheets apart from operations. Planned and actual revenue and expenses per cost center did not talk to each other.</p>
+  <h4>What I built</h4><ul><li>Budget boards by month and cost center, calculated by a robot from contracts, activities and expenses.</li><li>One-time load of the current year from the client's Excel and automatic calculation for following years.</li><li>Automatic linking: a new contract attaches itself to existing lines without overriding manual choices.</li></ul>
+  <h4>How it works</h4>
+  <ol class="flow" aria-label="How it works"><li>Contracts</li><li>Activities</li><li>Expenses</li><li>Calculation robot (n8n)</li><li>Revenue, expenses, summary</li><li>Per-contract summary</li></ol>
+  <h4>Results</h4><ul><li>58 automated tests of the calculation.</li><li>Reconciled against the client's Excel with zero difference over 12 months.</li><li>Traced two real production failures (control board in the trash and disconnected webhooks) to their root cause.</li></ul>
+  <h4>Engineering safeguards</h4><ul><li>Lock so it never runs twice at the same time.</li><li>Time budget and automatic re-run when the work does not fit in one execution.</li><li>Debounced webhooks so editing many cells does not trigger many runs.</li><li>Fail loudly instead of storing wrong data.</li></ul>
+  <p class="stack"><b>Stack:</b> n8n, monday.com GraphQL, Python (geradores), JavaScript (testes com simulações)</p>
+</article>
+
+<article class="card" id="travel">
+  <p class="tag">Serverless backend | corporate education</p>
+  <h3>Travel logistics: from supplier email to itinerary PDF</h3>
+  <h4>Problem</h4><p>Flight, hotel and transfer bookings arrived by email as PDFs and calendar files. The team read each voucher, typed it into monday and built the teacher's itinerary by hand.</p>
+  <h4>What I built</h4><ul><li>Python service on Vercel with a daily schedule and a webhook: reads only the final confirmation emails, creates the bookings in monday and links them to the teacher and activities.</li><li>Itinerary PDF generation (flights, activities, lodging, transfer) when a status changes, with mandatory human review.</li><li>Sending to the teacher and providers, off by default until the sender mailbox is authorized.</li></ul>
+  <h4>How it works</h4>
+  <ol class="flow" aria-label="How it works"><li>Daily schedule</li><li>Redis lock</li><li>Read emails</li><li>Create and link bookings</li><li>Generate PDF</li><li>Human review</li><li>Send</li></ol>
+  <h4>Results</h4><ul><li>First production cycle: 7 trips and 14 bookings created, 4 updated and 1 message routed to review because of ambiguity, with no errors.</li><li>Test suite across 11 files; dry run is the default mode.</li></ul>
+  <h4>Engineering safeguards</h4><ul><li>Fail closed: email sending only turns on with explicit authorization.</li><li>Idempotency by voucher key and message ID; durable per-recipient record against duplicate sends.</li><li>Secrets outside Git; every endpoint requires a credential.</li><li>When in doubt (ambiguous teacher, uncertain send) the system stops and asks for review instead of guessing.</li></ul>
+  <p class="stack"><b>Stack:</b> Python, Vercel (cron e funções), Redis (Upstash), Gmail API, monday.com API, geração de PDF</p>
+</article>
+
+<article class="card" id="erp">
+  <p class="tag">Web product | bespoke tailoring</p>
+  <h3>Production ERP with handwritten-sheet reading by vision</h3>
+  <h4>Problem</h4><p>Orders, production, inventory and measurements lived in spreadsheets and paper. Measurements were handwritten sheets.</p>
+  <h4>What I built</h4><ul><li>Web ERP (React, TypeScript, Supabase/Postgres, Deno Edge functions) with a production kanban, schedule, customers, measurements and orders, and role-based access control.</li><li>Vision pipeline (GPT-4o with strict JSON Schema) that reads the handwritten sheet and extracts 100+ fields per photo, flagging low-confidence reads in yellow for review.</li><li>Integrations without heavy backend work: bidirectional inventory sync with a marketplace and automatic posting of sales to a financial system via OAuth2, through n8n workflows.</li></ul>
+  <h4>How it works</h4>
+  <ol class="flow" aria-label="How it works"><li>Sheet photo</li><li>Vision model</li><li>Fields in JSON Schema</li><li>Low confidence in yellow</li><li>Human review</li><li>Order in the ERP</li></ol>
+  <h4>Results</h4><ul><li>In daily use by the client's team, with 2,000+ customer records.</li><li>400+ automated tests and 114 versioned database migrations.</li><li>Hourly reconciliation of a 1,700+ item catalog with the marketplace; sales already synced automatically to the financial system.</li></ul>
+  <h4>Engineering safeguards</h4><ul><li>Postgres RLS policies: anonymous users blocked, only authenticated internal users.</li><li>No service key in the frontend.</li><li>The system never trusts the model read blindly: uncertain fields are flagged for a human.</li><li>Isolated development environment with Docker.</li></ul>
+  <p class="stack"><b>Stack:</b> React, TypeScript, Vite, Tailwind, Supabase (Postgres, Auth, RLS, Edge Functions), Vitest, Docker, n8n, GPT-4o</p>
+</article>
+
+<article class="card" id="leads">
+  <p class="tag">Automation + WhatsApp | real estate developer</p>
+  <h3>Lead distribution over WhatsApp without getting the number banned</h3>
+  <h4>Problem</h4><p>Leads reached the CRM and had to reach the right broker fast. A burst of simultaneous sends had already caused a temporary block of the WhatsApp number.</p>
+  <h4>What I built</h4><ul><li>7 n8n workflows integrated with monday.com and a WhatsApp API: lead handoff to the broker with a personalized message, email only when the broker has no WhatsApp, automatic welcome replies (never repeating a number within 30 days) and new-deal alerts.</li><li>Global send queue with state persisted across runs: random spacing between messages, longer spacing for the same number, time window, daily brake and duplicate guard.</li><li>Read tracking: a webhook records when the broker read each alert and how long it took; every Monday an Excel with a per-broker summary goes to the point person.</li></ul>
+  <h4>How it works</h4>
+  <ol class="flow" aria-label="How it works"><li>Lead assigned</li><li>Build message</li><li>Global queue</li><li>WhatsApp</li><li>Read webhook</li><li>Weekly Excel</li></ol>
+  <h4>Results</h4><ul><li>The cause of the block was found in the execution history and removed by the queue.</li><li>60 alerts logged in the first period, 49 with confirmed reads; 4 defects that skewed the data fixed and 19 old records corrected.</li></ul>
+  <h4>Engineering safeguards</h4><ul><li>Diagnosis by comparing executions, not by guessing.</li><li>Silent failures fixed: a native automation switched off with no error (leads idle for over 24 h, resent) and emails failing because of an OAuth credential (moved to SMTP on the client's own domain).</li><li>State persisted across runs instead of random waits that cannot hold a queue.</li></ul>
+  <p class="stack"><b>Stack:</b> n8n, monday.com, Z-API (WhatsApp), SMTP, Excel</p>
+</article>
+
+<article class="card" id="tv">
+  <p class="tag">Dashboard + integrations | SquadHub (internal)</p>
+  <h3>ES5 TV dashboard and four payment platform integrations</h3>
+  <h4>Problem</h4><p>The office TV (a 2014 Smart TV) cannot open monday.com, and course sales arrived from different platforms with no single number.</p>
+  <h4>What I built</h4><ul><li>Static ES5 JavaScript page with 7 rotating screens (revenue, ARR, course sales, daily profitability, services). A single n8n webhook queries monday.com through GraphQL and Meta Ads and returns ready-to-render JSON; the TV refreshes every 5 minutes and holds no key.</li><li>Integration of four payment platforms into the sales board, with one item per order product, total split, deduplication key, foreign-currency conversion at the day's rate and a filter for events that are not sales.</li><li>Ad-spend sync for 4 accounts, with 3 retries and a fallback rate, and ROAS calculated by crossing spend and sales per day.</li></ul>
+  <h4>How it works</h4>
+  <ol class="flow" aria-label="How it works"><li>Payment platforms</li><li>n8n webhooks</li><li>Sales board (monday)</li><li>Data webhook</li><li>Ready JSON</li><li>TV (ES5)</li></ol>
+  <h4>Results</h4><ul><li>100+ real orders checked against the original notice, with zero difference between the sum of items and the amount paid.</li><li>Static hosting with automatic deploys, after auditing the Git history and confirming that no secret was ever committed.</li></ul>
+  <h4>Engineering safeguards</h4><ul><li>A webhook registered twice duplicated sales through a race condition: fixed with a wait and idempotent cleanup by key; 78 duplicates removed after proving each one.</li><li>A 500-item query limit hid the newest sales: cursor pagination and an explicit error above the limit.</li><li>Currency conversion fails instead of writing a wrong value.</li></ul>
+  <p class="stack"><b>Stack:</b> JavaScript ES5, n8n, monday.com GraphQL, Meta Ads API, API de câmbio, GitHub e hospedagem estática</p>
+</article>
+
+<article class="card" id="apps">
+  <p class="tag">Internal apps on top of monday | industry and consulting</p>
+  <h3>Customer panel and weighing app with end-to-end security</h3>
+  <h4>Problem</h4><p>Two teams needed simple screens over monday data: a customer overview and a production weighing form, without exposing the token or opening public access.</p>
+  <h4>What I built</h4><ul><li>Customer panel in Next.js and TypeScript, embedded in monday: list by customer health, filters, a chart of expected value per month and a customer page.</li><li>Weighing app in Node.js (Express) and React that records each weighing as a board item, calculating gross and net weight on screen.</li></ul>
+  <h4>How it works</h4>
+  <ol class="flow" aria-label="How it works"><li>User</li><li>Session login</li><li>Server (holds the token)</li><li>monday API</li><li>Board</li><li>Screen</li></ol>
+  <h4>Results</h4><ul><li>In use by the teams, with no secret in the browser or the repository.</li></ul>
+  <h4>Engineering safeguards</h4><ul><li>Token read only on the server; with no password configured, the panel refuses to open (fail closed).</li><li>Password checked on the server with constant-time comparison; session in a signed HttpOnly cookie.</li><li>Passwords stored as salted hashes (scrypt) with temporary lockout after 5 wrong attempts.</li><li>Embed policy that only allows monday.com.</li></ul>
+  <p class="stack"><b>Stack:</b> Next.js, React, TypeScript, Recharts, Node.js, Express, Vite, Vercel</p>
+</article>
+
+<article class="card" id="security">
+  <p class="tag">Engineering and security | agribusiness advisory</p>
+  <h3>Security and calculation review of a credit-analysis platform</h3>
+  <h4>Problem</h4><p>Web platform for credit analysis and financial projection for rural producers, with modules that did not check who the data belonged to and indicators that gave an inverted risk signal.</p>
+  <h4>What I built</h4><ul><li>Worked as a developer (NestJS, Prisma, PostgreSQL, Next.js, React, TypeScript): 36 of my changes merged over three months.</li><li>Closed a cross-client access hole: five modules checked no membership and changing the ID in the URL was enough. Added a global organization guard, took down unauthenticated endpoints and fixed a privilege escalation in public sign-up.</li><li>Fixed calculation defects (division by a non-positive denominator landing in the best band, bands that left 27.7% of scores unrated, a margin that read a non-existent field) and built a money-semantics module with Decimal.js.</li></ul>
+  <h4>How it works</h4>
+  <ol class="flow" aria-label="How it works"><li>Map the calculation</li><li>Find the defect</li><li>Write a failing test</li><li>Fix</li><li>Document the convention</li></ol>
+  <h4>Results</h4><ul><li>415 automated tests written by me, 88 of them end-to-end across 8 suites.</li></ul>
+  <h4>Engineering safeguards</h4><ul><li>Multi-tenant authorization verified per module and covered by tests.</li><li>Monetary precision with Decimal instead of floating point.</li><li>Typed API-to-frontend contract generated from OpenAPI.</li></ul>
+  <p class="stack"><b>Stack:</b> NestJS, Prisma, PostgreSQL, Next.js, React, TypeScript, Jest, Decimal.js, OpenAPI</p>
+</article>
+</section>
+<section id="prompts"><h2>Prompts and LLM experiments</h2><p>Three real prompts from my work, rewritten with generic data. The pattern is the same in all three: fixed output format, an explicit rule for what the model does not know, and validation in code before writing.</p>
+<article class="card"><h3>Extracting fields from a contract PDF</h3><p>Fixed output format, no invented values, so code can validate before writing.</p><pre><code>You extract data from service contracts.
+Reply ONLY with JSON in the format below, no extra text.
+Rules:
+- If a field is not in the document, use null. Never infer or invent.
+- Dates as YYYY-MM-DD. Amounts as numbers, no currency symbol.
+- If the document is an amendment or another type, return &quot;type&quot;: &quot;amendment&quot; and leave the other fields null.
+Fields: type, client, tax_id, start_date, end_date, total_value, installments, installment_value, due_day.</code></pre></article>
+<article class="card"><h3>Classification with a closed label list</h3><p>The label must exist in the destination column; any other is silently rejected. The exact list goes in the prompt.</p><pre><code>Classify the expense below into ONE label from the list, copying the text exactly as written (accents included).
+List: Airfare | Lodging | Transfer | Class Hour | Venue Rental | Other
+If none clearly applies, answer &quot;Other&quot;.
+Reply with the label only.</code></pre></article>
+<article class="card"><h3>Vision: handwritten sheet with per-field confidence</h3><p>The model admits when it could not read. An uncertain field becomes an alert for a human instead of wrong data.</p><pre><code>Read the photo of the measurement sheet and return JSON following the provided schema.
+For each field return { &quot;value&quot;: ..., &quot;confidence&quot;: &quot;high&quot; | &quot;medium&quot; | &quot;low&quot; }.
+- If the text is illegible or ambiguous, value null and confidence &quot;low&quot;. Do not guess.
+- Measurements in centimeters, numbers with a decimal point.
+- Do not fill blank fields with typical values.</code></pre></article>
+</section>
+<section><h2>n8n automation library by sector (45)</h2><p>Every workflow in this list was designed and deployed by me. The exported files contain client identifiers, so they are not published.</p>
+<table><thead><tr><th>Client sector</th><th>Workflows</th><th>What they automate</th></tr></thead><tbody><tr><td>Corporate education and consulting</td><td class="num">16</td><td>Contract and receipt reading with LLMs, budget, email notices, scheduled emails, meeting numbering, satisfaction surveys, forms and payment reconciliation.</td></tr><tr><td>Real estate developer</td><td class="num">7</td><td>Lead handoff to brokers, deduplication, WhatsApp welcome replies, read tracking and a weekly report.</td></tr><tr><td>Field technical services</td><td class="num">5</td><td>Work-order number sync across boards, warranty creation, calendar events for visits and links between boards.</td></tr><tr><td>Furniture and panel manufacturing</td><td class="num">3</td><td>Quote delivery dates, supplier and chosen price in purchasing, and restocking of missing parts at shipping.</td></tr><tr><td>Retail and marketplace</td><td class="num">3</td><td>Double-date campaigns, employee due dates and a monthly checklist for six stores.</td></tr><tr><td>Bespoke tailoring</td><td class="num">2</td><td>Inventory reconciliation and sending to a marketplace.</td></tr><tr><td>Industry and trade (finance)</td><td class="num">1</td><td>Invoice and payment-slip approval routed to finance.</td></tr><tr><td>Marketing and services</td><td class="num">2</td><td>Click logging and WhatsApp rotation; follow-up of customers with low ratings.</td></tr><tr><td>SquadHub (internal)</td><td class="num">6</td><td>TV dashboard, payment platforms, ad spend and course sales.</td></tr></tbody></table></section>
+<section><h2>Principles I apply</h2><ul class="prin"><li>Fail loudly: if the right value cannot be written, the flow stops with a clear error.</li><li>Idempotency: reprocessing never duplicates. Every creation has a stable key.</li><li>Human in the loop when in doubt: the system sets the uncertain case aside instead of guessing.</li><li>Diagnose with evidence: execution history and comparison before touching code.</li><li>Secrets out of the code: tokens in credentials and proxies, never in an exported file.</li><li>Test business rules first: pure calculation, with stubs and reconciliation against the source.</li></ul></section>
+<section><h2>Certifications</h2><p>16 official monday.com certificates (work management, advanced workflows, service delivery, implementation consulting, CRM and sales), issued between September and November 2026.</p>
+<ul class="certs"><li><a href="https://monday.lessonly.com/certificate/52643573" rel="noopener">view certificate 1</a></li><li><a href="https://monday.lessonly.com/certificate/52643577" rel="noopener">view certificate 2</a></li><li><a href="https://monday.lessonly.com/certificate/52643578" rel="noopener">view certificate 3</a></li><li><a href="https://monday.lessonly.com/certificate/52643579" rel="noopener">view certificate 4</a></li><li><a href="https://monday.lessonly.com/certificate/52643580" rel="noopener">view certificate 5</a></li><li><a href="https://monday.lessonly.com/certificate/52643581" rel="noopener">view certificate 6</a></li><li><a href="https://monday.lessonly.com/certificate/52643582" rel="noopener">view certificate 7</a></li><li><a href="https://monday.lessonly.com/certificate/52643575" rel="noopener">view certificate 8</a></li><li><a href="https://monday.lessonly.com/certificate/52643574" rel="noopener">view certificate 9</a></li><li><a href="https://monday.lessonly.com/certificate/52643576" rel="noopener">view certificate 10</a></li><li><a href="https://monday.lessonly.com/certificate/52643583" rel="noopener">view certificate 11</a></li><li><a href="https://monday.lessonly.com/certificate/52643584" rel="noopener">view certificate 12</a></li><li><a href="https://monday.lessonly.com/certificate/52643585" rel="noopener">view certificate 13</a></li><li><a href="https://monday.lessonly.com/certificate/52643586" rel="noopener">view certificate 14</a></li><li><a href="https://monday.lessonly.com/certificate/52643587" rel="noopener">view certificate 15</a></li><li><a href="https://monday.lessonly.com/certificate/52643588" rel="noopener">view certificate 16</a></li></ul></section>
+</main>
+<footer><div class="wrap"><h2>Contact</h2>
+<p>Available for a remote 30-hour-per-week internship. Graduating December 2027.</p>
+<p>matheusbeyersdorff@gmail.com • <a href="https://www.linkedin.com/in/matheusasi/">linkedin.com/in/matheusasi</a> • <a href="https://github.com/matheusasi">github.com/matheusasi</a></p></div></footer>
+</body></html>

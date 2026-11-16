@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Matheus Beyersdorff - Portfólio AI Builder</title>
+<meta name="description" content="Construo automações com IA e pequenos produtos que rodam em produção para clientes reais: do problema de negócio a uma ferramenta funcionando, com testes e sem dado errado.">
+<style>
+:root{--bg:#ffffff;--fg:#1a1a1a;--mut:#595959;--ac:#305bab;--soft:#f0f5fd;--line:#d9e3f5;--chip:#dedaff}
+@media (prefers-color-scheme:dark){:root{--bg:#10141c;--fg:#eef1f7;--mut:#a9b2c3;--ac:#8fb3f5;--soft:#171e2b;--line:#2a3447;--chip:#2c2850}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+a{color:var(--ac)}
+.skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:var(--bg);padding:6px 10px;z-index:9}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+header.hero{padding:56px 0 28px;border-bottom:1px solid var(--line)}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:14px;color:var(--mut)}
+h1{font-size:clamp(34px,6vw,56px);line-height:1.05;margin:18px 0 6px;letter-spacing:-.02em}
+.role{font-size:20px;color:var(--ac);font-weight:700;margin:0 0 14px}
+.tagline{font-size:18px;max-width:760px;margin:0 0 18px}
+.conf{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--mut)}
+section{padding:40px 0;border-bottom:1px solid var(--line)}
+h2{font-size:26px;margin:0 0 18px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;list-style:none;padding:0;margin:0}
+.stats li{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:16px}
+.stats b{display:block;font-size:34px;color:var(--ac);line-height:1.1}
+.card{background:var(--soft);border:1px solid var(--line);border-radius:14px;padding:22px;margin:0 0 22px}
+.tag{margin:0;font-size:12.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--ac);font-weight:700}
+h3{font-size:22px;margin:6px 0 10px}
+h4{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--mut);margin:16px 0 4px}
+.card p{margin:4px 0}.card ul{margin:4px 0 4px 20px;padding:0}.card li{margin:3px 0}
+ol.flow{list-style:none;display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:6px 0 4px;counter-reset:s}
+ol.flow li{counter-increment:s;background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:5px 13px;font-size:14px}
+ol.flow li:not(:last-child)::after{content:" \2192";color:var(--ac);font-weight:700}
+.stack{margin-top:14px!important;font-size:14px;color:var(--mut)}
+pre{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:12px 14px;overflow:auto;font-size:13.5px;line-height:1.5;white-space:pre-wrap}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--mut);font-size:13px;text-transform:uppercase;letter-spacing:.05em}
+td.num{text-align:center;font-weight:700;color:var(--ac)}
+.prin{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:12px;list-style:none;padding:0;margin:0}
+.prin li{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.certs{display:flex;flex-wrap:wrap;gap:8px;padding:0;list-style:none;margin:12px 0 0}
+.certs a{display:inline-block;background:var(--chip);border-radius:999px;padding:3px 11px;font-size:13px;text-decoration:none}
+footer{padding:34px 0 60px}
+@media print{.top a,.certs{display:none}.card{break-inside:avoid}}
+</style></head><body>
+<a class="skip" href="#casos">Ir para o conteúdo</a>
+<header class="hero"><div class="wrap">
+ <div class="top"><span>Curitiba, PR - Brasil</span><a href="portfolio-en.html" hreflang="en">English</a></div>
+ <h1>Matheus Beyersdorff</h1>
+ <p class="role">AI Builder | Estudante de Engenharia de Software</p>
+ <p class="tagline">Construo automações com IA e pequenos produtos que rodam em produção para clientes reais: do problema de negócio a uma ferramenta funcionando, com testes e sem dado errado.</p>
+ <p class="conf">Confidencialidade: nomes de clientes, pessoas, dados, valores e capturas de tela foram omitidos de propósito. Cada cliente aparece pelo setor. Detalhes técnicos adicionais podem ser conversados em entrevista.</p>
+</div></header>
+<main class="wrap">
+<section><h2>Em números</h2><ul class="stats"><li><b>40+</b>workflows n8n em produção, em cerca de 10 clientes</li><li><b>3</b>pipelines com LLM: PDF de contrato, recibos e fichas manuscritas</li><li><b>900+</b>testes automatizados escritos nos projetos</li><li><b>16</b>certificados monday.com (set-nov 2026)</li></ul></section>
+<section id="casos"><h2>Casos em destaque</h2>
+
+<article class="card" id="llm-docs">
+  <p class="tag">IA + automação | educação corporativa</p>
+  <h3>Contratos e recibos lidos por LLM, sem digitação</h3>
+  <h4>Problema</h4><p>Contratos chegavam como PDF assinado e recibos como foto ou planilha. A equipe digitava tudo à mão no monday.com, com erro e retrabalho.</p>
+  <h4>O que construí</h4><ul><li>Pipeline que baixa o PDF do contrato, extrai o texto e pede ao GPT-4o os campos num formato fixo.</li><li>Validação antes de gravar: CNPJ do cliente e soma das parcelas. Só campos vazios são preenchidos; divergências viram comentário no item; termo aditivo só comenta.</li><li>Leitura de recibos com modelo de visão e classificação a partir de uma lista fechada de rótulos válidos.</li></ul>
+  <h4>Como funciona</h4>
+  <ol class="flow" aria-label="Como funciona"><li>PDF anexado</li><li>Extrair texto</li><li>LLM (JSON fixo)</li><li>Validar CNPJ e parcelas</li><li>Preencher só vazios</li><li>Comentar divergências</li></ol>
+  <h4>Resultados</h4><ul><li>Testado de ponta a ponta com contratos reais e 66 verificações automáticas.</li><li>16 workflows do n8n em produção para o mesmo cliente (contratos, recibos, orçamento, avisos, cronograma).</li></ul>
+  <h4>Cuidados de engenharia</h4><ul><li>Chave de idempotência por lançamento: reprocessar o arquivo não duplica nada.</li><li>Conferência de erro depois de cada gravação, porque o monday responde sucesso mesmo quando a gravação falha.</li><li>Rótulos restritos à lista exata da coluna, pois um rótulo inexistente é recusado em silêncio.</li><li>Chamadas ao monday por um proxy interno: o token não aparece em nenhum arquivo de workflow.</li></ul>
+  <p class="stack"><b>Tecnologias:</b> n8n, GPT-4o, monday.com GraphQL, Node.js</p>
+</article>
+
+<article class="card" id="budget">
+  <p class="tag">Dados + automação | educação corporativa</p>
+  <h3>Motor de orçamento que liga contratos, atividades e despesas</h3>
+  <h4>Problema</h4><p>O orçamento vivia em planilhas separadas da operação. Receita planejada, realizada e despesas por centro de custo não conversavam.</p>
+  <h4>O que construí</h4><ul><li>Quadros de orçamento por mês e centro de custo, calculados por um robô a partir dos contratos, das atividades e das despesas.</li><li>Carga única do ano corrente a partir do Excel do cliente e cálculo automático dos anos seguintes.</li><li>Ligação automática: contrato novo se liga sozinho às linhas existentes, sem tirar escolhas manuais.</li></ul>
+  <h4>Como funciona</h4>
+  <ol class="flow" aria-label="Como funciona"><li>Contratos</li><li>Atividades</li><li>Despesas</li><li>Robô de cálculo (n8n)</li><li>Receitas, despesas e resumo</li><li>Resumo por contrato</li></ol>
+  <h4>Resultados</h4><ul><li>58 testes automatizados do cálculo.</li><li>Conferido contra o Excel do cliente com diferença zero nos 12 meses.</li><li>Rastreio de duas falhas reais em produção (quadro de controle na lixeira e avisos desconectados) até a causa.</li></ul>
+  <h4>Cuidados de engenharia</h4><ul><li>Trava para nunca rodar duas vezes ao mesmo tempo.</li><li>Orçamento de tempo e nova rodada automática quando o trabalho não cabe em uma execução.</li><li>Avisos agrupados com espera, para não disparar uma rodada por célula editada.</li><li>Falha explícita em vez de dado errado.</li></ul>
+  <p class="stack"><b>Tecnologias:</b> n8n, monday.com GraphQL, Python (geradores), JavaScript (testes com simulações)</p>
+</article>
+
+<article class="card" id="travel">
+  <p class="tag">Backend serverless | educação corporativa</p>
+  <h3>Logística de viagens: do e-mail do fornecedor ao roteiro em PDF</h3>
+  <h4>Problema</h4><p>Reservas de voo, hotel e transfer chegavam por e-mail em PDF e calendário. A equipe lia cada voucher, digitava no monday e montava o roteiro do professor à mão.</p>
+  <h4>O que construí</h4><ul><li>Serviço em Python na Vercel com agendamento diário e webhook: lê só os e-mails finais de confirmação, cria as reservas no monday e as liga ao professor e às atividades.</li><li>Geração do roteiro em PDF (voos, atividades, hospedagem, transfer) quando o status muda, com revisão humana obrigatória.</li><li>Envio ao professor e aos prestadores, desligado por padrão até a caixa remetente ser autorizada.</li></ul>
+  <h4>Como funciona</h4>
+  <ol class="flow" aria-label="Como funciona"><li>Agendamento diário</li><li>Trava no Redis</li><li>Ler e-mails</li><li>Criar e ligar reservas</li><li>Gerar PDF</li><li>Revisão humana</li><li>Enviar</li></ol>
+  <h4>Resultados</h4><ul><li>No primeiro ciclo em produção: 7 deslocamentos e 14 reservas criados, 4 atualizados e 1 mensagem separada para revisão por ambiguidade, sem erro.</li><li>Suíte de testes em 11 arquivos; modo de simulação (dry run) como padrão.</li></ul>
+  <h4>Cuidados de engenharia</h4><ul><li>Falha fechada: o envio de e-mails só liga com autorização explícita.</li><li>Idempotência pela chave do voucher e pelo ID da mensagem; registro durável por destinatário contra envio duplicado.</li><li>Segredos fora do Git; todos os endpoints exigem credencial.</li><li>Em caso de dúvida (professor ambíguo, envio incerto) o sistema para e pede conferência em vez de adivinhar.</li></ul>
+  <p class="stack"><b>Tecnologias:</b> Python, Vercel (cron e funções), Redis (Upstash), Gmail API, monday.com API, geração de PDF</p>
+</article>
+
+<article class="card" id="erp">
+  <p class="tag">Produto web | alfaiataria sob medida</p>
+  <h3>ERP de produção, com leitura de fichas manuscritas por visão</h3>
+  <h4>Problema</h4><p>Pedidos, produção, estoque e medidas viviam em planilhas e papel. As medidas eram fichas manuscritas.</p>
+  <h4>O que construí</h4><ul><li>ERP web (React, TypeScript, Supabase/Postgres, funções Edge em Deno) com kanban de produção, cronograma, clientes, medidas e pedidos, e controle de acesso por papel.</li><li>Pipeline de visão (GPT-4o com JSON Schema restrito) que lê a ficha manuscrita e extrai mais de 100 campos por foto, marcando em amarelo os de baixa confiança para conferência.</li><li>Integrações sem backend pesado: sincronização bidirecional de estoque com um marketplace e lançamento automático de vendas em um sistema financeiro via OAuth2, por workflows do n8n.</li></ul>
+  <h4>Como funciona</h4>
+  <ol class="flow" aria-label="Como funciona"><li>Foto da ficha</li><li>Modelo de visão</li><li>Campos em JSON Schema</li><li>Baixa confiança em amarelo</li><li>Conferência humana</li><li>Pedido no ERP</li></ol>
+  <h4>Resultados</h4><ul><li>Em uso diário pela equipe do cliente, com mais de 2 mil registros de clientes.</li><li>Mais de 400 testes automatizados e 114 migrações de banco versionadas.</li><li>Reconciliação horária de um catálogo de mais de 1.700 itens com o marketplace; vendas já sincronizadas automaticamente com o sistema financeiro.</li></ul>
+  <h4>Cuidados de engenharia</h4><ul><li>Políticas de RLS no Postgres: usuário anônimo bloqueado, somente usuários internos autenticados.</li><li>Nenhuma chave de serviço no frontend.</li><li>O sistema não confia cegamente na leitura do modelo: o campo incerto é marcado para um humano.</li><li>Ambiente de desenvolvimento isolado com Docker.</li></ul>
+  <p class="stack"><b>Tecnologias:</b> React, TypeScript, Vite, Tailwind, Supabase (Postgres, Auth, RLS, Edge Functions), Vitest, Docker, n8n, GPT-4o</p>
+</article>
+
+<article class="card" id="leads">
+  <p class="tag">Automação + WhatsApp | incorporadora imobiliária</p>
+  <h3>Distribuição de leads por WhatsApp sem bloqueio do número</h3>
+  <h4>Problema</h4><p>Leads chegavam ao CRM e precisavam chegar rápido ao corretor certo. Uma rajada de envios simultâneos já tinha causado bloqueio temporário do número de WhatsApp.</p>
+  <h4>O que construí</h4><ul><li>7 workflows no n8n integrados ao monday.com e a uma API de WhatsApp: repasse do lead ao corretor com mensagem personalizada, e-mail só quando o corretor não tem WhatsApp, boas-vindas automáticas (sem repetir o número em 30 dias) e alerta de nova negociação.</li><li>Fila global de envio com estado guardado entre execuções: intervalo aleatório entre mensagens, intervalo maior para o mesmo número, janela de horário, freio diário e trava de duplicidade.</li><li>Rastreio de leitura: um webhook grava quando o corretor leu e em quanto tempo; toda segunda um Excel com o resumo por corretor é enviado à responsável.</li></ul>
+  <h4>Como funciona</h4>
+  <ol class="flow" aria-label="Como funciona"><li>Lead atribuído</li><li>Montar mensagem</li><li>Fila global</li><li>WhatsApp</li><li>Webhook de leitura</li><li>Excel semanal</li></ol>
+  <h4>Resultados</h4><ul><li>A causa do bloqueio foi achada no histórico de execuções e eliminada pela fila.</li><li>60 avisos registrados no primeiro período, 49 com leitura confirmada; 4 defeitos que distorciam os dados corrigidos e 19 registros antigos acertados.</li></ul>
+  <h4>Cuidados de engenharia</h4><ul><li>Diagnóstico por comparação de execuções, não por palpite.</li><li>Falhas silenciosas corrigidas: automação nativa desligada sem erro (leads parados por mais de 24 h, reenviados) e e-mails falhando por credencial OAuth (migrados para SMTP no domínio do cliente).</li><li>Estado persistente entre execuções, em vez de esperas aleatórias que não seguram a fila.</li></ul>
+  <p class="stack"><b>Tecnologias:</b> n8n, monday.com, Z-API (WhatsApp), SMTP, Excel</p>
+</article>
+
+<article class="card" id="tv">
+  <p class="tag">Painel + integrações | SquadHub (interno)</p>
+  <h3>Painel de TV em ES5 e integração de quatro plataformas de pagamento</h3>
+  <h4>Problema</h4><p>A TV do escritório (Smart TV de 2014) não abre o monday.com, e as vendas de cursos chegavam por plataformas diferentes, sem um número único.</p>
+  <h4>O que construí</h4><ul><li>Página estática em JavaScript ES5 com 7 telas rotativas (receita, ARR, vendas de cursos, lucratividade diária, serviços). Um único webhook do n8n consulta o monday.com por GraphQL e o Meta Ads e devolve o JSON pronto; a TV atualiza a cada 5 minutos e não guarda chave nenhuma.</li><li>Integração de quatro plataformas de pagamento ao quadro de vendas, com um item por produto do pedido, rateio do total, chave de deduplicação, conversão de moeda pela cotação do dia e filtro de eventos que não são venda.</li><li>Sincronização do custo de anúncios de 4 contas, com 3 tentativas e cotação de reserva, e cálculo de ROAS cruzando gasto e vendas por dia.</li></ul>
+  <h4>Como funciona</h4>
+  <ol class="flow" aria-label="Como funciona"><li>Plataformas de pagamento</li><li>Webhooks n8n</li><li>Quadro de vendas (monday)</li><li>Webhook de dados</li><li>JSON pronto</li><li>TV (ES5)</li></ol>
+  <h4>Resultados</h4><ul><li>Mais de 100 pedidos reais conferidos contra o aviso original, com diferença zero entre a soma dos itens e o valor pago.</li><li>Hospedagem estática com deploy automático, depois de auditar o histórico do Git e confirmar que nenhum segredo foi versionado.</li></ul>
+  <h4>Cuidados de engenharia</h4><ul><li>Webhook cadastrado duas vezes duplicava vendas por condição de corrida: resolvido com espera e limpeza idempotente pela chave; 78 duplicatas removidas depois de provar cada uma.</li><li>Limite de 500 itens por consulta escondia as vendas novas: paginação por cursor e erro explícito acima do limite.</li><li>Conversão de moeda falha em vez de gravar valor errado.</li></ul>
+  <p class="stack"><b>Tecnologias:</b> JavaScript ES5, n8n, monday.com GraphQL, Meta Ads API, API de câmbio, GitHub e hospedagem estática</p>
+</article>
+
+<article class="card" id="apps">
+  <p class="tag">Apps internos sobre o monday | indústria e consultoria</p>
+  <h3>Painel de clientes e app de pesagem com segurança de ponta a ponta</h3>
+  <h4>Problema</h4><p>Duas equipes precisavam de telas simples sobre os dados do monday: uma visão geral dos clientes e um formulário de pesagem de produção, sem expor o token nem abrir acesso público.</p>
+  <h4>O que construí</h4><ul><li>Painel de clientes em Next.js e TypeScript, embutido no monday: lista por saúde do cliente, filtros, gráfico de valor previsto por mês e página do cliente.</li><li>App de pesagem em Node.js (Express) e React que grava cada pesagem como item do quadro, calculando peso bruto e líquido na tela.</li></ul>
+  <h4>Como funciona</h4>
+  <ol class="flow" aria-label="Como funciona"><li>Usuário</li><li>Login com sessão</li><li>Servidor (guarda o token)</li><li>API do monday</li><li>Quadro</li><li>Tela</li></ol>
+  <h4>Resultados</h4><ul><li>Em uso pelas equipes, sem nenhum segredo no navegador nem no repositório.</li></ul>
+  <h4>Cuidados de engenharia</h4><ul><li>Token lido só no servidor; sem senha configurada, o painel recusa abrir (falha fechada).</li><li>Senha conferida no servidor com comparação em tempo constante; sessão em cookie HttpOnly assinado.</li><li>Senhas guardadas como hash com sal (scrypt) e bloqueio temporário após 5 tentativas erradas.</li><li>Política de embed que só permite o monday.com.</li></ul>
+  <p class="stack"><b>Tecnologias:</b> Next.js, React, TypeScript, Recharts, Node.js, Express, Vite, Vercel</p>
+</article>
+
+<article class="card" id="security">
+  <p class="tag">Engenharia e segurança | consultoria ao agronegócio</p>
+  <h3>Revisão de segurança e de cálculo numa plataforma de análise de crédito</h3>
+  <h4>Problema</h4><p>Plataforma web de análise de crédito e projeção financeira para produtores rurais, com módulos que não verificavam a quem os dados pertenciam e indicadores que davam o sinal de risco invertido.</p>
+  <h4>O que construí</h4><ul><li>Atuei como desenvolvedor (NestJS, Prisma, PostgreSQL, Next.js, React, TypeScript): 36 alterações minhas integradas em três meses.</li><li>Fechei uma falha de acesso entre clientes: cinco módulos não checavam vínculo e bastava trocar o ID na URL. Criei um guard global de organização, tirei do ar endpoints sem autenticação e corrigi uma escalada de privilégio no cadastro público.</li><li>Corrigi defeitos de cálculo (divisão por denominador não positivo caindo na melhor faixa, faixas que deixavam 27,7% das notas sem classificação, margem que lia um campo inexistente) e criei um módulo de semântica monetária com Decimal.js.</li></ul>
+  <h4>Como funciona</h4>
+  <ol class="flow" aria-label="Como funciona"><li>Mapear o cálculo</li><li>Achar defeito</li><li>Escrever teste que falha</li><li>Corrigir</li><li>Documentar convenção</li></ol>
+  <h4>Resultados</h4><ul><li>415 testes automatizados escritos por mim, 88 deles de ponta a ponta em 8 suítes.</li></ul>
+  <h4>Cuidados de engenharia</h4><ul><li>Autorização multi-inquilino verificada por módulo e coberta por teste.</li><li>Precisão monetária com Decimal em vez de ponto flutuante.</li><li>Contrato tipado entre API e frontend gerado do OpenAPI.</li></ul>
+  <p class="stack"><b>Tecnologias:</b> NestJS, Prisma, PostgreSQL, Next.js, React, TypeScript, Jest, Decimal.js, OpenAPI</p>
+</article>
+</section>
+<section id="prompts"><h2>Prompts e experimentações com LLMs</h2><p>Três prompts reais do meu trabalho, reescritos com dados genéricos. O padrão é o mesmo nos três: saída em formato fixo, regra explícita para o que o modelo não sabe, e validação em código antes de gravar.</p>
+<article class="card"><h3>Extração de campos de um contrato em PDF</h3><p>Saída em formato fixo, sem inventar valor, para o código validar antes de gravar.</p><pre><code>Você extrai dados de contratos de prestação de serviços.
+Responda SOMENTE com JSON no formato abaixo, sem texto extra.
+Regras:
+- Se um campo não está no documento, use null. Nunca deduza nem invente.
+- Datas no formato AAAA-MM-DD. Valores como número, sem símbolo de moeda.
+- Se o documento for termo aditivo ou outro tipo, devolva &quot;tipo&quot;: &quot;aditivo&quot; e deixe os demais campos null.
+Campos: tipo, contratante, cnpj, data_inicio, data_fim, valor_total, parcelas, valor_parcela, dia_vencimento.</code></pre></article>
+<article class="card"><h3>Classificação com lista fechada de rótulos</h3><p>O rótulo precisa existir na coluna de destino; qualquer outro é recusado em silêncio. A lista exata vai no prompt.</p><pre><code>Classifique a despesa abaixo em UM dos rótulos da lista, copiando o texto exatamente como está (acentos incluídos).
+Lista: Aéreo | Hospedagem | Transfer | Hora Aula | Locação Espaço | Outros
+Se nenhum se aplicar com clareza, responda &quot;Outros&quot;.
+Responda só com o rótulo.</code></pre></article>
+<article class="card"><h3>Visão: ficha manuscrita com confiança por campo</h3><p>O modelo admite que não leu. Campo incerto vira alerta para um humano, em vez de dado errado.</p><pre><code>Leia a foto da ficha de medidas e devolva JSON seguindo o esquema fornecido.
+Para cada campo devolva { &quot;valor&quot;: ..., &quot;confianca&quot;: &quot;alta&quot; | &quot;media&quot; | &quot;baixa&quot; }.
+- Se o texto estiver ilegível ou ambíguo, valor null e confiança &quot;baixa&quot;. Não chute.
+- Medidas em centímetros, números com ponto decimal.
+- Não complete campos em branco com valores típicos.</code></pre></article>
+</section>
+<section><h2>Biblioteca de automações n8n por setor (45)</h2><p>Todos os workflows desta lista foram desenhados e implantados por mim. Os arquivos exportados contêm identificadores de clientes, por isso não estão publicados.</p>
+<table><thead><tr><th>Setor do cliente</th><th>Workflows</th><th>O que automatizam</th></tr></thead><tbody><tr><td>Educação corporativa e consultoria</td><td class="num">16</td><td>Leitura de contratos e recibos com LLM, orçamento, avisos por e-mail, cronograma por e-mail, numeração de encontros, pesquisa de satisfação, formulários e conciliação de pagamentos.</td></tr><tr><td>Incorporadora imobiliária</td><td class="num">7</td><td>Repasse de leads ao corretor, deduplicação, boas-vindas por WhatsApp, rastreio de leitura e relatório semanal.</td></tr><tr><td>Serviços técnicos de campo</td><td class="num">5</td><td>Sincronização de número de OS entre quadros, criação de garantia, eventos no calendário para visitas e vínculos entre quadros.</td></tr><tr><td>Indústria de móveis e painéis</td><td class="num">3</td><td>Data de entrega de orçamentos, fornecedor e valor escolhido nas compras e reposição de peças faltantes na expedição.</td></tr><tr><td>Varejo e marketplace</td><td class="num">3</td><td>Campanhas de data dupla, vencimentos de colaboradores e checklist mensal de seis lojas.</td></tr><tr><td>Alfaiataria sob medida</td><td class="num">2</td><td>Conciliação e envio de estoque com um marketplace.</td></tr><tr><td>Indústria e comércio (financeiro)</td><td class="num">1</td><td>Aprovação de nota fiscal e boleto encaminhada ao financeiro.</td></tr><tr><td>Marketing e serviços</td><td class="num">2</td><td>Registro de cliques e rodízio de WhatsApp; repescagem de clientes com avaliação baixa.</td></tr><tr><td>SquadHub (interno)</td><td class="num">6</td><td>Painel de TV, plataformas de pagamento, custo de anúncios e vendas de cursos.</td></tr></tbody></table></section>
+<section><h2>Princípios que aplico</h2><ul class="prin"><li>Falhar alto: se não dá para gravar o valor certo, o fluxo para com um erro claro.</li><li>Idempotência: reprocessar nunca duplica. Toda criação tem uma chave estável.</li><li>Humano no circuito quando há dúvida: o sistema separa o caso incerto em vez de adivinhar.</li><li>Diagnosticar com evidência: histórico de execuções e comparação, antes de mexer no código.</li><li>Segredo fora do código: tokens em credenciais e proxies, nunca em arquivo exportado.</li><li>Teste primeiro nas regras de negócio: cálculo puro, com simulações e conferência contra a fonte.</li></ul></section>
+<section><h2>Certificações</h2><p>16 certificados oficiais da monday.com (gestão de trabalho, workflows avançados, entrega de serviço, consultoria de implementação, CRM e vendas), emitidos entre setembro e novembro de 2026.</p>
+<ul class="certs"><li><a href="https://monday.lessonly.com/certificate/52643573" rel="noopener">ver certificado 1</a></li><li><a href="https://monday.lessonly.com/certificate/52643577" rel="noopener">ver certificado 2</a></li><li><a href="https://monday.lessonly.com/certificate/52643578" rel="noopener">ver certificado 3</a></li><li><a href="https://monday.lessonly.com/certificate/52643579" rel="noopener">ver certificado 4</a></li><li><a href="https://monday.lessonly.com/certificate/52643580" rel="noopener">ver certificado 5</a></li><li><a href="https://monday.lessonly.com/certificate/52643581" rel="noopener">ver certificado 6</a></li><li><a href="https://monday.lessonly.com/certificate/52643582" rel="noopener">ver certificado 7</a></li><li><a href="https://monday.lessonly.com/certificate/52643575" rel="noopener">ver certificado 8</a></li><li><a href="https://monday.lessonly.com/certificate/52643574" rel="noopener">ver certificado 9</a></li><li><a href="https://monday.lessonly.com/certificate/52643576" rel="noopener">ver certificado 10</a></li><li><a href="https://monday.lessonly.com/certificate/52643583" rel="noopener">ver certificado 11</a></li><li><a href="https://monday.lessonly.com/certificate/52643584" rel="noopener">ver certificado 12</a></li><li><a href="https://monday.lessonly.com/certificate/52643585" rel="noopener">ver certificado 13</a></li><li><a href="https://monday.lessonly.com/certificate/52643586" rel="noopener">ver certificado 14</a></li><li><a href="https://monday.lessonly.com/certificate/52643587" rel="noopener">ver certificado 15</a></li><li><a href="https://monday.lessonly.com/certificate/52643588" rel="noopener">ver certificado 16</a></li></ul></section>
+</main>
+<footer><div class="wrap"><h2>Contato</h2>
+<p>Disponível para estágio remoto de 30 horas semanais. Formatura prevista em dezembro de 2027.</p>
+<p>matheusbeyersdorff@gmail.com • <a href="https://www.linkedin.com/in/matheusasi/">linkedin.com/in/matheusasi</a> • <a href="https://github.com/matheusasi">github.com/matheusasi</a></p></div></footer>
+</body></html>
